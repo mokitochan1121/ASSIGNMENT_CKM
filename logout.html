@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+
+
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<script src="jquery.cookie.js"></script>
+
+<script>
+$(document).ready(function() {
+	var username = $.cookie('username');
+	var password = $.cookie('password');
+	
+	
+	$.cookie('username', 'null');
+	$.cookie('password', 'null');
+	
+	setTimeout(function(){window.location.href='HOME.html'},1000);	
+});
+</script>
+
+
+
+
+
+</body>
+</html>
